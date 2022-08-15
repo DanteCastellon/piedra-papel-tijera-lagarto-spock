@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPTLS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="nerdSelection">
+        <h1 class="title">Piedra, Papel, Tijera, Lagarto, Spock!</h1>
+        <h2 class="subtitle">Elige tu personaje:</h2>
+        <div id="contenedorTarjetas" class="tarjetas">
+        
+        </div>
+        
+        <button id="btnSelectNerd">Selecionar</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitle">Elige tu enemigo dirigiéndote hacia él</h2>
+        <canvas id="habitacion"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+        <div>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+        </div>
+    </section>
+
+    <section id="attackSelection">
+        <h1 class="title">Piedra, Papel, Tijera, Lagarto, Spock!</h1>
+        <h2 class="subtitle">Elige tu ataque:</h2>
+        <div id="contenedorAtaques" class="tarjetas-ataques">
+            
+        </div>
+
+        <div id="messageSection">
+             <p id="resultado">Mucha suerte</p>
+             <section id="restart">
+                 <button id="btnRestart">Reiniciar</button>
+            </section>
+        </div>
+
+        <div class="ataques">
+            <div class="ataques-del-jugador">
+                <p id="spanVictoriasJugador">0</p>
+                <p id="pj"></p>
+                <div id="atkP"></div>
+            </div>
+            <div class="ataques-del-enemigo">
+                <p id="spanVictoriasEnemigo">0</p>
+                <p id="enemyPj"></p>
+                <div id="atkE"></div>
+            </div>         
+        </div>
+
+    </section>
+    <h4>Reglas del juego</h4>
+    <p>Tijera corta a papel, papel tapa a piedra, piedra aplasta a lagarto, lagarto envenena a Spock, Spock rompe a tijera, tijera decapita a lagarto, lagarto devora a papel, papel desautoriza a Spock, Spock vaporiza a piedra, y como siempre, piedra aplasta a tijera</p>
+    <script src="./index.js"></script>
+</body>
+</html>

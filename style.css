@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&family=Mochiy+Pop+One&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #0b6e4f;
+}
+
+#nerdSelection {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.title {
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #e0e0e2;
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #e0e0e2;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta {
+    font-weight: bold;
+    width: 220px;
+    height: 150px;
+    margin: 10px;
+    background-color: #2b4162;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e2;
+}
+
+#btnSelectNerd {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: #e0e0e2;
+}
+
+#attackSelection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnAttack {
+    align-items: center;
+    font-size: 32px;
+    margin-top: 20px;
+    width: 120px;
+    height: 80;
+    border-radius: 20px;
+    background: #2b4162;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #4a7c59;
+    color: #e0e0e2;
+}
+
+.tarjeta img {
+    width: 75px;
+    height: 120px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: darkorange;
+}
+
+#messageSection {
+    width: 280px;
+    background-color: #fcf6bd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnRestart {
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-del-jugador, .ataques-del-enemigo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#habitacion {
+    border: 2px solid white;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: #e0e0e2;
+    margin: 10px, 2px;
+}
+
+@media (max-width: 480px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
